@@ -1,9 +1,12 @@
 
 .header {
     width: 100vw;
+    position: sticky;
 }
 
 .wrapper {
-   max-width: 1200px;
-
+    display: flex;
+    margin: 0 auto;
+    max-width: 1200px;
+    background-color: brown;
 }

@@ -1,8 +1,14 @@
 .header {
   width: 100vw;
+  position: -webkit-sticky;
+  position: sticky;
 }
 
 .wrapper {
-  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  max-width: 1200px;  
 }
 /*# sourceMappingURL=main.css.map */
