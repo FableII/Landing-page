@@ -15,7 +15,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 75rem;
+  /* 1200px  */
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -39,7 +40,7 @@ body {
 .logo__title {
   color: #F1CDB3;
   font-family: Georgia;
-  font-size: 32px;
+  font-size: 2rem;
   letter-spacing: 6%;
   line-height: 110%;
 }
@@ -91,7 +92,7 @@ body {
 }
 
 .list__link_disabled {
-  color: #CDCDCD;
+  color: #cdcdcd;
 }
 
 .hero {
@@ -122,7 +123,8 @@ body {
 }
 
 .hero__subtitle {
-  color: #CDCDCD;
+  margin-top: 42px;
+  color: #cdcdcd;
   font-family: Arial;
   font-size: 15px;
   line-height: 160%;
