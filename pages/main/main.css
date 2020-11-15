@@ -1,3 +1,7 @@
+:root {
+  font-size: 16px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -48,7 +52,7 @@ body {
 .logo__subtitle {
   color: #FFFFFF;
   font-family: Arial;
-  font-size: 13px;
+  font-size: 0.8125rem;
   letter-spacing: 10%;
   line-height: 110%;
 }
@@ -83,7 +87,7 @@ body {
 .list__link {
   color: #FFFFFF;
   font-family: Arial;
-  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 160%;
 }
 
@@ -117,16 +121,25 @@ body {
 .hero__title {
   color: #FFFFFF;
   font-family: Georgia;
-  font-size: 44px;
+  font-size: 2.75rem;
   line-height: 130%;
-  max-width: 310px;
+  max-width: 19.375rem;
 }
 
 .hero__subtitle {
-  margin-top: 42px;
   color: #cdcdcd;
+  margin-top: 2.625rem;
   font-family: Arial;
-  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 160%;
+}
+
+.hero__button {
+  padding: 15px 45px;
+  margin-top: 42px;
+  width: 207px;
+  background-color: #F1CDB3;
+  border-radius: 100px;
+  border: none;
 }
 /*# sourceMappingURL=main.css.map */
