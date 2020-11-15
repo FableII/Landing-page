@@ -25,20 +25,22 @@ $color-dark-3xl: #292929;
     box-sizing: border-box;
 }
 
-body {
-    background-color: black;
-}
-
 .wrapper {
     display: flex;
     margin: 0 auto;
-    max-width: 75rem; /* 1200px  */
+    max-width: 75rem; 
     justify-content: space-between;
 }
 
 .header {
-    width: 100vw;
-    background-color: black;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+}
+
+.menu {
+    display: flex;
+    width: 443px;
 }
 
 .logo {
@@ -50,28 +52,32 @@ body {
     color: $color-primary-color;
     font-family: Georgia;
     font-size: 2rem;
-    letter-spacing: 6%;
+    font-weight: 400;
+    letter-spacing: 0.12rem;
     line-height: 110%;
 
 }
 
 .logo__subtitle {
+    margin-top: 10px;
     color: $color-light-xl;
     font-family: Arial;
     font-size: 0.8125rem;
-    letter-spacing: 10%;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    text-align: center;
     line-height: 110%;
 }
 
 .menu {
     display: flex;
-    width: 443px;
 }
 
+
 .list {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    width: 100%;
     list-style-type: none;
 }
 
@@ -84,6 +90,7 @@ body {
     color: $color-light-xl;
     font-family: Arial;
     font-size: 0.9375rem;
+    font-weight: 400;
     line-height: 160%;
 }
 
@@ -96,38 +103,46 @@ body {
 }
 
 .main {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero {
+    display: flex;
+    padding-top: 180px;
     background: url(/assets/images/noise_transparent@2x.png), 
     radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%),
     #211F20;
 }
 
-.hero {
+.hero__content {
     display: flex;
 }
 
-.hero__content {
+.content-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-bottom: 84px;
 }
 
-.hero__title {
+.content-section__title{
+    max-width: 19.375rem;
     color: $color-light-xl;
     font-family: Georgia;
     font-size: 2.75rem;
+    font-weight: 400;
     line-height: 130%;
-    max-width: 19.375rem;
 }
 
-.hero__subtitle {
+.content-section__subtitle {
     color: $color-dark-s;
     margin-top: 2.625rem;
     font-family: Arial;
-    font-size: 0.9375rem;
     line-height: 160%;
 }
 
-.hero__button {
+.content-section__button {
     padding: 15px 45px;
     margin-top: 42px;
     width: 207px;

@@ -7,59 +7,68 @@
     <link rel="stylesheet" href="/pages/main/main.css">
 </head>
 <body>
-    <header class="header">
-        <div class="wrapper">
-            <div class="logo">
-                <div class="logo__title">
-                    Cozy House
+        <header class="header">
+            <div class="wrapper">
+                <div class="logo">
+                    <div class="logo__title">
+                        Cozy House
+                    </div>
+                    <div class="logo__subtitle">
+                        Shelter for pets in Boston
+                    </div>
                 </div>
-                <div class="logo__subtitle">
-                    Shelter for pets in Boston
-                </div>
+                <nav class="menu">
+                    <ul class="list">
+                        <li class="list__item">
+                            <a class="list__link list__link_active" href="">
+                                About the shelter
+                            </a> 
+                        </li>
+                        <li class="list__item">
+                            <a class="list__link list__link_disabled" href="">
+                                Our pets
+                            </a> 
+                        </li>
+                        <li class="list__item">
+                           <a class="list__link list__link_disabled" href="">
+                               Help the shelter
+                            </a> 
+                        </li>
+                        <li class="list__item">
+                           <a class="list__link list__link_disabled" href="">
+                               Contacts
+                            </a> 
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="menu">
-                <ul class="list">
-                    <li class="list__item list__link_active">
-                        <a class="list__link" href="">
-                            About the shelter
-                        </a> 
-                    </li>
-                    <li class="list__item">
-                        <a class="list__link list__link_disabled" href="">
-                            Our pets
-                        </a> 
-                    </li>
-                    <li class="list__item">
-                       <a class="list__link list__link_disabled" href="">
-                           Help the shelter
-                        </a> 
-                    </li>
-                    <li class="list__item">
-                       <a class="list__link list__link_disabled" href="">
-                           Contacts
-                        </a> 
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main class="main">
-        <div class="wrapper">
+        </header>
+        <main class="main">
             <div class="hero">
+            <div class="wrapper">
                 <div class="hero__content">
-                    <h2 class="hero__title">
-                        Not only people need a house
-                    </h2>
-                    <p class="hero__subtitle">
-                        We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!
-                    </p>
-                    <button type="button" class="hero__button">
-                        Make a friend
-                    </button>
+                    <div class="content-section">
+                        <h2 class="content-section__title">
+                            Not only people need a house
+                        </h2>
+                        <p class="content-section__subtitle">
+                            We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!
+                        </p>
+                        <button 
+                            type="button" 
+                            class="content-section__button"
+                        >
+                            Make a friend
+                        </button>
+                    </div>
+                    <img 
+                        src="/assets/images/start-screen-puppy.png" 
+                        alt="start-screen-puppy" 
+                        class="hero__image"
+                    >
                 </div>
-                <img src="/assets/images/start-screen-puppy.png" alt="start-screen-puppy">
             </div>
         </div>
-    </main>
+        </main>
     </body>
 </html>
