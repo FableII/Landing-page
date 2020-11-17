@@ -148,23 +148,14 @@ radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%),
 
 .logo__title {
     color: $color-primary-color;
-    font-family: Georgia;
-    font-size: 3.2rem;
-    font-weight: 400;
-    letter-spacing: 0.192rem;
-    line-height: 110%;
-
+    @include logo_title;
 }
 
 .logo__subtitle {
     margin-top: 1rem;
-    color: $color-light-xl;
-    font-family: Arial;
-    font-size: 1.3rem;
-    line-height: 110%;
     text-align: center;
-    letter-spacing: 0.16rem;
-    font-weight: 400;
+    color: $color-light-xl;
+    @include logo_subtitle;
 }
 
 .menu {
