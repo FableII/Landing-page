@@ -12,6 +12,98 @@ $color-dark-xl: #4C4C4C;
 $color-dark-2xl: #444444;
 $color-dark-3xl: #292929;
 
+$start-screen-gradient-background: url(/assets/images/noise_transparent.png), 
+radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%),
+#211F20;
+
+$footer-gradient-background : url(noise_lines_transparent@2X.png), 
+radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%),
+#211F20;
+
+
+@mixin h2 {
+    font: {
+        family: Georgia;
+        size: 4.4rem;
+        weight: 400;
+    }
+    line-height: 130%;
+}
+
+@mixin h3 {
+    font: {
+        family: Georgia;
+        style: normal;
+        weight: normal;
+        size: 3.5rem;
+    }
+    line-height: 130%;
+    letter-spacing: 0.06rem;
+}
+
+@mixin h4 {
+    font: {
+        family: Georgia;
+        style: normal;
+        weight: normal;
+        size: 2rem;
+    }
+    line-height: 115%;
+    letter-spacing: 0.06rem;
+}
+
+@mixin h5 {
+    font: {
+        family: Georgia;
+        style: normal;
+        weight: normal;
+        size: 1.5rem;
+    }
+    line-height: 110%;
+    letter-spacing: 0.06rem;
+}
+
+@mixin paragraph-l {
+    font: {
+        family: Arial;
+        style: normal;
+        weight: normal;
+        size: 1.5rem;
+    }
+    line-height: 160%;
+}
+
+@mixin paragraph-s {
+    font: {
+        family: Arial;
+        style: italic;
+        weight: normal;
+        size: 1.2rem;
+    }
+    line-height: 150%;
+}
+
+@mixin logo_title {
+    font: {
+        family: Georgia;
+        style: normal;
+        weight: normal;
+        size: 3.2rem;
+    }
+    line-height: 110%;
+    letter-spacing: 0.06rem;
+}
+
+@mixin logo_subtitle {
+    font: {
+        family: Arial;
+        style: normal;
+        weight: normal;
+        size: 1.3rem;
+    }
+    letter-spacing: 0.1rem;
+}
+
 :root {
     font-size: 10px;
 }
@@ -116,14 +208,13 @@ $color-dark-3xl: #292929;
 .hero {
     display: flex;
     padding-top: 18rem;
-    background: url(/assets/images/noise_transparent@2x.png), 
-    radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%),
-    #211F20;
+    background: $start-screen-gradient-background;
 }
 
 .hero__content {
     width: 100%;
     display: flex;
+    justify-content: space-between;
 }
 
 .content-section {
@@ -138,10 +229,7 @@ $color-dark-3xl: #292929;
 .content-section__title{
     max-width: 31rem;
     color: $color-light-xl;
-    font-family: Georgia;
-    font-size: 4.4rem;
-    font-weight: 400;
-    line-height: 130%;
+    @include h2;
 }
 
 .content-section__subtitle {
