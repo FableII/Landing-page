@@ -1,5 +1,9 @@
 :root {
-  font-size: 16px;
+  font-size: 10px;
+}
+
+.icon {
+  padding: 0 12rem;
 }
 
 * {
@@ -15,23 +19,27 @@
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
-  max-width: 75rem;
+  max-width: 120rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
 .header {
-  width: 100%;
+  width: 100vh;
+  max-width: 100%;
   position: absolute;
-  top: 60px;
+  top: 6rem;
 }
 
 .menu {
+  width: 44.3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 443px;
 }
 
 .logo {
@@ -47,21 +55,21 @@
 .logo__title {
   color: #F1CDB3;
   font-family: Georgia;
-  font-size: 2rem;
+  font-size: 3.2rem;
   font-weight: 400;
-  letter-spacing: 0.12rem;
+  letter-spacing: 0.192rem;
   line-height: 110%;
 }
 
 .logo__subtitle {
-  margin-top: 10px;
+  margin-top: 1rem;
   color: #FFFFFF;
   font-family: Arial;
-  font-size: 0.8125rem;
-  font-weight: 400;
-  letter-spacing: 0.1rem;
-  text-align: center;
+  font-size: 1.3rem;
   line-height: 110%;
+  text-align: center;
+  letter-spacing: 0.16rem;
+  font-weight: 400;
 }
 
 .menu {
@@ -93,13 +101,13 @@
 .list__link {
   color: #FFFFFF;
   font-family: Arial;
-  font-size: 0.9375rem;
+  font-size: 1.5rem;
   font-weight: 400;
   line-height: 160%;
 }
 
 .list__link_active {
-  border-bottom: solid 3px #F1CDB3;
+  border-bottom: solid 0.3rem #F1CDB3;
 }
 
 .list__link_disabled {
@@ -120,17 +128,20 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 180px;
+  padding-top: 18rem;
   background: url(/assets/images/noise_transparent@2x.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
 }
 
 .hero__content {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .content-section {
+  padding-bottom: 8rem;
+  max-width: 46.8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -141,31 +152,64 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-bottom: 84px;
 }
 
 .content-section__title {
-  max-width: 19.375rem;
+  max-width: 31rem;
   color: #FFFFFF;
   font-family: Georgia;
-  font-size: 2.75rem;
+  font-size: 4.4rem;
   font-weight: 400;
   line-height: 130%;
 }
 
 .content-section__subtitle {
+  margin-top: 4.2rem;
+  font-size: 1.5rem;
   color: #cdcdcd;
-  margin-top: 2.625rem;
   font-family: Arial;
   line-height: 160%;
 }
 
 .content-section__button {
-  padding: 15px 45px;
-  margin-top: 42px;
-  width: 207px;
+  padding: 1.5rem 4.5rem;
+  margin-top: 4rem;
+  font-size: 1.7rem;
   background-color: #F1CDB3;
-  border-radius: 100px;
+  border-radius: 10rem;
+  letter-spacing: 0.11rem;
   border: none;
+}
+
+.hero__image-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero__image {
+  width: 100%;
+  max-width: 69.8rem;
+  max-height: 72.8rem;
+}
+
+@media screen and (max-width: 1280px) {
+  .wrapper {
+    padding: 0 4rem;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .hero__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hero__content {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 /*# sourceMappingURL=main.css.map */
