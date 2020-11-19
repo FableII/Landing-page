@@ -38,7 +38,7 @@ radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%),
         size: 3.5rem;
     }
     line-height: 130%;
-    letter-spacing: 0.06rem;
+    letter-spacing: 0.2rem;
 }
 
 @mixin h4 {
@@ -102,6 +102,13 @@ radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%),
         size: 1.3rem;
     }
     letter-spacing: 0.13rem;
+}
+
+@mixin slider-button {
+    border: 3px solid $color-primary-color;
+    border-radius: 100%;
+    padding: 1.9rem;
+    background: none;
 }
 
 :root {
@@ -292,6 +299,42 @@ radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%),
 
 }
 
+.pets {
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+
+    &__wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        min-width: 40rem;
+        text-align: center;
+
+        span {
+            display: block;
+        }
+
+        color: $color-dark-l;
+        @include h3;
+    }
+
+    &__content {
+        display: flex;
+
+        .slider-button {
+            @include slider-button;
+        }
+    
+        .slider-button_reverted {
+            transform: rotate(180deg);
+            @include slider-button;
+        }
+    }
+}
 
 @media screen and (max-width: 1280px) {
     .wrapper {
