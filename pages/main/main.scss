@@ -38,7 +38,7 @@ radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%),
         size: 3.5rem;
     }
     line-height: 130%;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.21rem;
 }
 
 @mixin h4 {
@@ -49,7 +49,7 @@ radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%),
         size: 2rem;
     }
     line-height: 115%;
-    letter-spacing: 0.06rem;
+    letter-spacing: 0.12rem;
 }
 
 @mixin h5 {
@@ -60,7 +60,7 @@ radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%),
         size: 1.5rem;
     }
     line-height: 110%;
-    letter-spacing: 0.06rem;
+    letter-spacing: 0.09rem;
 }
 
 @mixin paragraph-l {
@@ -91,7 +91,7 @@ radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%),
         size: 3.2rem;
     }
     line-height: 110%;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.192rem;
 }
 
 @mixin logo_subtitle {
@@ -242,7 +242,8 @@ radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%),
         font-size: 1.7rem;
         background-color: $color-primary-color;
         border-radius: 10rem;
-        letter-spacing: 0.11rem;
+        line-height: 130%;
+        letter-spacing: 0.102rem;
         border: none;
     }
 }
@@ -289,7 +290,7 @@ radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%),
         margin-top: 2.5rem;
 
         p {
-        &:nth-child(2){
+        & + p {
             margin-top: 2.5rem;
         }
         color: $color-dark-xl;
