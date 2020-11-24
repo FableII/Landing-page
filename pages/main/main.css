@@ -178,14 +178,20 @@
 }
 
 .content-section__button {
-  padding: 1.5rem 4.5rem;
   margin-top: 4rem;
-  font-size: 1.7rem;
   background-color: #F1CDB3;
+  padding: 1.5rem 4.5rem;
+  font-size: 1.7rem;
   border-radius: 10rem;
   line-height: 130%;
-  letter-spacing: 0.102rem;
+  letter-spacing: 0.108rem;
+  cursor: pointer;
+  outline: none;
   border: none;
+}
+
+.content-section__button:hover {
+  background-color: #FDDCC4;
 }
 
 .about {
@@ -307,6 +313,75 @@
   display: flex;
 }
 
+.pets__content .pets-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 6rem 0;
+}
+
+.pets__content .pets-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 0.9rem;
+  margin: 0 4.5rem;
+}
+
+.pets__content .pets-card__image {
+  width: 100%;
+}
+
+.pets__content .pets-card__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 3rem;
+}
+
+.pets__content .pets-card__title {
+  margin: 3rem 0;
+  text-align: center;
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 115%;
+  letter-spacing: 0.12rem;
+}
+
+.pets__content .pets-card__button {
+  background-color: transparent;
+  border: #F1CDB3 solid 2px;
+  -webkit-box-shadow: inset 0 0 0 2px #F1CDB3;
+          box-shadow: inset 0 0 0 2px #F1CDB3;
+  padding: 1.5rem 4.5rem;
+  font-size: 1.7rem;
+  border-radius: 10rem;
+  line-height: 130%;
+  letter-spacing: 0.108rem;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.pets__content .pets-card__button:hover {
+  background-color: #FDDCC4;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .pets__content .slider-button {
   border: 3px solid #F1CDB3;
   border-radius: 100%;
@@ -321,6 +396,22 @@
   border-radius: 100%;
   padding: 1.9rem;
   background: none;
+}
+
+.pets__button {
+  background-color: #F1CDB3;
+  padding: 1.5rem 4.5rem;
+  font-size: 1.7rem;
+  border-radius: 10rem;
+  line-height: 130%;
+  letter-spacing: 0.108rem;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.pets__button:hover {
+  background-color: #FDDCC4;
 }
 
 @media screen and (max-width: 1280px) {

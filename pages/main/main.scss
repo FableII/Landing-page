@@ -1,4 +1,4 @@
-$color-primary-color: #F1CDB3;
+$color-primary: #F1CDB3;
 $color-primary-light: #FDDCC4;
 
 $color-light-s: #FAFAFA;
@@ -105,10 +105,44 @@ radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%),
 }
 
 @mixin slider-button {
-    border: 3px solid $color-primary-color;
+    border: 3px solid $color-primary;
     border-radius: 100%;
     padding: 1.9rem;
     background: none;
+}
+
+@mixin button() {
+    padding: 1.5rem 4.5rem;
+    font-size: 1.7rem;
+    border-radius: 10rem;
+    line-height: 130%;
+    letter-spacing: 0.108rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+@mixin button__primary() {
+    background-color: $color-primary;
+
+    &:hover {
+    background-color: $color-primary-light;
+    }
+
+    @include button();
+}
+
+@mixin button__secondary() {
+    background-color: transparent;
+    border: $color-primary solid 2px;
+    box-shadow: inset 0 0 0 2px $color-primary;
+
+    &:hover {
+        background-color: $color-primary-light;
+        box-shadow: none;
+        }
+
+    @include button();
 }
 
 :root {
@@ -149,15 +183,15 @@ radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%),
     flex-direction: column;
 
     &__title {
-        color: $color-primary-color;
-        @include logo_title;
+        color: $color-primary;
+        @include logo_title();
     }
 
     &__subtitle {
         margin-top: 1rem;
         text-align: center;
         color: $color-light-xl;
-        @include logo_subtitle;
+        @include logo_subtitle();
     }
 }
 
@@ -179,7 +213,7 @@ radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%),
             line-height: 160%;
 
             &_active {
-                border-bottom: solid 0.3rem $color-primary-color;
+                border-bottom: solid 0.3rem $color-primary;
             }
             &_disabled {
                 color: $color-dark-s;
@@ -225,7 +259,7 @@ radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%),
     &__title {
         max-width: 31rem;
         color: $color-light-xl;
-        @include h2;
+        @include h2();
     }
     
     &__subtitle {
@@ -237,14 +271,8 @@ radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%),
     }
     
     &__button {
-        padding: 1.5rem 4.5rem;
         margin-top: 4rem;
-        font-size: 1.7rem;
-        background-color: $color-primary-color;
-        border-radius: 10rem;
-        line-height: 130%;
-        letter-spacing: 0.102rem;
-        border: none;
+        @include button__primary();
     }
 }
 
@@ -283,7 +311,7 @@ radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%),
         }
 
         color: $color-dark-l;
-        @include h3; 
+        @include h3(); 
     }
 
     &__description {
@@ -294,7 +322,7 @@ radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%),
             margin-top: 2.5rem;
         }
         color: $color-dark-xl;
-        @include paragraph-l;
+        @include paragraph-l();
         }
     }
 
@@ -320,20 +348,59 @@ radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%),
         }
 
         color: $color-dark-l;
-        @include h3;
+        @include h3();
     }
 
     &__content {
         display: flex;
 
+        .pets-cards {
+            display: flex;
+            padding: 6rem 0;
+        }
+
+        .pets-card {
+            display: flex;
+            flex-direction: column;
+            border-radius: 0.9rem;
+            margin: 0 4.5rem;
+
+            &__image {
+                width: 100%;
+            }
+
+            &__content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-bottom: 3rem;
+            }
+
+            &__title {
+                margin: 3rem 0;
+                text-align: center;
+                @include h4();
+            }
+
+            &__button {
+                @include button__secondary();
+                
+            }
+
+        }
+
         .slider-button {
-            @include slider-button;
+            @include slider-button();
         }
     
         .slider-button_reverted {
             transform: rotate(180deg);
-            @include slider-button;
+            @include slider-button();
         }
+    }
+
+    &__button {
+        @include button__primary();
     }
 }
 
