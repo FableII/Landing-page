@@ -303,8 +303,8 @@ $card_hover :  0px 2px 35px 14px rgba(13, 13, 13, 0.04);
         padding: 8rem 17.5rem 10rem 17.5rem;
     }
 
-    & .wrapper {
-        justify-content: center;
+    .wrapper {
+        justify-content: space-between;
     }
     
     &__image-wrapper {
@@ -425,6 +425,49 @@ $card_hover :  0px 2px 35px 14px rgba(13, 13, 13, 0.04);
         @include button__primary();
     }
 }
+
+.help {
+    margin-top: 8rem;
+    margin-bottom: 10rem;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    &__title {
+        color: $color-dark-l;
+        text-align: center;
+        @include h3();
+
+        span {
+            display: block;
+        }
+    }
+    
+    &__content {
+        margin-top: 6rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        column-gap: 12rem;
+        row-gap: 5.5rem;
+    }
+    
+    &__item {
+        display: flex;
+        flex-direction: column;
+
+        &-title {
+            margin-top: 3rem;
+            color: $color-dark-l;
+            text-align: center;
+            @include h4();
+        }
+    }
+}
+
 
 @media screen and (max-width: 1280px) {
     .wrapper {
