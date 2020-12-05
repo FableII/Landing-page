@@ -427,8 +427,8 @@ $card_hover :  0px 2px 35px 14px rgba(13, 13, 13, 0.04);
 }
 
 .help {
-    margin-top: 8rem;
-    margin-bottom: 10rem;
+    padding-top: 8rem;
+    padding-bottom: 10rem;
 
     &__wrapper {
         display: flex;
@@ -465,6 +465,64 @@ $card_hover :  0px 2px 35px 14px rgba(13, 13, 13, 0.04);
             text-align: center;
             @include h4();
         }
+    }
+}
+
+.donation {
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__image-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__content {
+        margin-left: 3rem;
+        max-width: 38rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__title {
+        color: &$color-dark-l;
+        @include h3();
+
+        span {
+            display: block;
+        }
+    }
+
+    &__subtitle {
+        margin-top: 2rem;
+        color: $color-dark-l;
+        @include h5();
+    }
+
+    &__payment {
+        @include button__primary();
+        margin-top: 2rem;
+        padding: 1rem 1.5rem;
+        border-radius: 1rem;
+        display: flex;
+
+        &-text {
+            padding-left: 1.5rem;
+            @include h4();
+        }
+    }
+
+    &__description {
+        margin-top: 2rem;
+        color: $color-dark-m;
+        @include paragraph-s();
     }
 }
 

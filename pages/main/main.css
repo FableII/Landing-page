@@ -475,8 +475,8 @@
 }
 
 .help {
-  margin-top: 8rem;
-  margin-bottom: 10rem;
+  padding-top: 8rem;
+  padding-bottom: 10rem;
 }
 
 .help__wrapper {
@@ -542,6 +542,116 @@
   font-size: 2rem;
   line-height: 115%;
   letter-spacing: 0.12rem;
+}
+
+.donation {
+  padding-top: 8rem;
+  padding-bottom: 10rem;
+}
+
+.donation__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.donation__image-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.donation__content {
+  margin-left: 3rem;
+  max-width: 38rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.donation__title {
+  color: .donation__title #545454;
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3.5rem;
+  line-height: 130%;
+  letter-spacing: 0.21rem;
+}
+
+.donation__title span {
+  display: block;
+}
+
+.donation__subtitle {
+  margin-top: 2rem;
+  color: #545454;
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 110%;
+  letter-spacing: 0.09rem;
+}
+
+.donation__payment {
+  background-color: #F1CDB3;
+  padding: 1.5rem 4.5rem;
+  font-size: 1.7rem;
+  border-radius: 10rem;
+  line-height: 130%;
+  letter-spacing: 0.108rem;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  margin-top: 2rem;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.donation__payment:hover {
+  background-color: #FDDCC4;
+}
+
+.donation__payment-text {
+  padding-left: 1.5rem;
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 115%;
+  letter-spacing: 0.12rem;
+}
+
+.donation__description {
+  margin-top: 2rem;
+  color: #B2B2B2;
+  font-family: Arial;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 1.2rem;
+  line-height: 150%;
 }
 
 @media screen and (max-width: 1280px) {
