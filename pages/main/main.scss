@@ -12,11 +12,11 @@ $color-dark-xl: #4C4C4C;
 $color-dark-2xl: #444444;
 $color-dark-3xl: #292929;
 
-$start-screen-gradient-background: url(/assets/images/noise_transparent.png), 
+$start-screen-gradient-background: url(/assets/images/noise/noise_transparent.png), 
 radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%),
 #211F20;
 
-$footer-gradient-background : url(noise_lines_transparent@2X.png), 
+$footer-gradient-background : url(/assets/images/noise/noise_transparent.png), 
 radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%),
 #211F20;
 
@@ -470,7 +470,7 @@ $card_hover :  0px 2px 35px 14px rgba(13, 13, 13, 0.04);
 
 .donation {
     padding-top: 8rem;
-    padding-bottom: 10rem;
+    padding-bottom: 10.5rem;
 
     &__wrapper {
         display: flex;
@@ -525,6 +525,57 @@ $card_hover :  0px 2px 35px 14px rgba(13, 13, 13, 0.04);
         margin-top: 2rem;
         color: $color-dark-m;
         @include paragraph-s();
+    }
+}
+
+.footer {
+    padding-top: 4rem;
+    background: $footer-gradient-background;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        flex: 1;
+        margin-top: 1.6rem;
+        margin-bottom: 6rem;
+        padding-right: 16.5rem;
+    }
+
+    &__locations,
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &-title {
+            color: $color-light-xl;
+            @include h3();
+
+            span {
+                display: block;
+            }
+        }
+
+        &-address,
+        &-phone,
+        &-mail {
+            display: flex;
+            align-items: center;
+
+            &-place {
+                span {
+                    display: block;
+                }
+            }
+            
+            &-place,
+            &-text {
+                padding-left: 2rem;
+                color: $color-primary;
+                @include h4();
+            }
+        }
+
     }
 }
 
