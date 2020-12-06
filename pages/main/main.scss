@@ -492,7 +492,7 @@ $card_hover :  0px 2px 35px 14px rgba(13, 13, 13, 0.04);
     }
 
     &__title {
-        color: &$color-dark-l;
+        color: $color-dark-l;
         @include h3();
 
         span {
