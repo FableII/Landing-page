@@ -188,11 +188,41 @@ $card_hover :  0px 2px 35px 14px rgba(13, 13, 13, 0.04);
     max-width: 100%;
     position: absolute;
     top: 6rem;
-}
 
-.menu {
-    width: 44.3rem;
-    display: flex;
+    .nav {
+        width: 44.3rem;
+        display: flex;
+
+        .nav-list {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+        
+            &__item {
+                display: flex;
+                align-items: center;
+            }
+        
+            &__link {
+                font-family: Arial;
+                font-size: 1.5rem;
+                font-weight: 400;
+                line-height: 160%;
+                color: $color-light-xl;
+                
+                &_active {
+                    border-bottom: solid 0.3rem $color-primary;
+                }
+
+                &_disabled {
+                    color: $color-dark-s;
+                }
+            }
+            
+        }
+
+    }
 }
 
 .logo {
@@ -209,33 +239,6 @@ $card_hover :  0px 2px 35px 14px rgba(13, 13, 13, 0.04);
         text-align: center;
         color: $color-light-xl;
         @include logo_subtitle();
-    }
-}
-
-.list {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-
-    .list__item {
-        display: flex;
-        align-items: center;
-
-        .list__link {
-            color: $color-light-xl;
-            font-family: Arial;
-            font-size: 1.5rem;
-            font-weight: 400;
-            line-height: 160%;
-
-            &_active {
-                border-bottom: solid 0.3rem $color-primary;
-            }
-            &_disabled {
-                color: $color-dark-s;
-            }
-        }
     }
 }
 
