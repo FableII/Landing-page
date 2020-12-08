@@ -105,7 +105,7 @@ $card_hover :  0px 2px 35px 14px rgba(13, 13, 13, 0.04);
     letter-spacing: 0.13rem;
 }
 
-@mixin slider-button {
+@mixin pagination-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,6 +125,12 @@ $card_hover :  0px 2px 35px 14px rgba(13, 13, 13, 0.04);
         box-shadow: none;
     }
 
+}
+
+@mixin pagination-button_disabled {
+    @include pagination-button();
+
+    box-shadow: inset 0 0 0 0.3rem $color-dark-s;
 }
 
 @mixin button() {
@@ -162,19 +168,6 @@ $card_hover :  0px 2px 35px 14px rgba(13, 13, 13, 0.04);
     @include button();
 }
 
-:root {
-    font-size: 10px;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
 
 .pets-header {
     display: flex;
@@ -208,7 +201,7 @@ $card_hover :  0px 2px 35px 14px rgba(13, 13, 13, 0.04);
                 line-height: 160%;
                 
                 &_active {
-                    border-bottom: solid 0.3rem $color-dark-3xl;
+                    border-bottom: solid 0.3rem $color-primary;
                 }
 
                 &_disabled {
@@ -244,6 +237,39 @@ $card_hover :  0px 2px 35px 14px rgba(13, 13, 13, 0.04);
         flex-wrap: wrap;
         column-gap: 4rem;
         row-gap: 3rem;
+    }
+
+    &-paginations {
+        margin-top: 6rem;
+        display: flex;
+        justify-content: center;
+
+
+        &__button {
+            margin: 0 1rem;
+            @include h4();
+            @include pagination-button();
+
+            &_active {
+                box-shadow: none;
+                background-color: $color-primary;
+                cursor: auto;
+
+                &:hover {
+                    background-color: $color-primary;
+                }
+            }
+
+            &:disabled {
+                box-shadow: inset 0 0 0 0.3rem $color-dark-s;
+
+                &:hover {
+                    box-shadow: inset 0 0 0 0.3rem $color-dark-s;
+                    background-color: transparent;
+                    cursor: auto;
+                }
+            }
+        }
     }
 }
 

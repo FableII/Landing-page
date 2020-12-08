@@ -1,15 +1,3 @@
-:root {
-  font-size: 10px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
 .pets-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -61,7 +49,7 @@
 }
 
 .pets-header .nav .nav-list__link_active {
-  border-bottom: solid 0.3rem #292929;
+  border-bottom: solid 0.3rem #F1CDB3;
 }
 
 .pets-header .nav .nav-list__link_disabled {
@@ -102,6 +90,76 @@
   -webkit-column-gap: 4rem;
           column-gap: 4rem;
   row-gap: 3rem;
+}
+
+.main-paginations {
+  margin-top: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-paginations__button {
+  margin: 0 1rem;
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 115%;
+  letter-spacing: 0.12rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 5.2rem;
+  height: 5.2rem;
+  -webkit-box-shadow: inset 0 0 0 0.3rem #F1CDB3;
+          box-shadow: inset 0 0 0 0.3rem #F1CDB3;
+  border-radius: 100%;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  padding: 1.9rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.main-paginations__button:hover {
+  background-color: #FDDCC4;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.main-paginations__button_active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: #F1CDB3;
+  cursor: auto;
+}
+
+.main-paginations__button_active:hover {
+  background-color: #F1CDB3;
+}
+
+.main-paginations__button:disabled {
+  -webkit-box-shadow: inset 0 0 0 0.3rem #cdcdcd;
+          box-shadow: inset 0 0 0 0.3rem #cdcdcd;
+}
+
+.main-paginations__button:disabled:hover {
+  -webkit-box-shadow: inset 0 0 0 0.3rem #cdcdcd;
+          box-shadow: inset 0 0 0 0.3rem #cdcdcd;
+  background-color: transparent;
+  cursor: auto;
 }
 
 .pets-card {
