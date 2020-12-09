@@ -64,6 +64,7 @@
   font-weight: 400;
   line-height: 160%;
   color: #FFFFFF;
+  text-decoration: none;
 }
 
 .header .nav .nav-list__link_active {
